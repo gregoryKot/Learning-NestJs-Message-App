@@ -13,7 +13,7 @@ export class MessagesService {
     return await this.messagesRepo.findAll();
   }
 
-  async createMessage(content: string) {
+  async create(content: string) {
     return await this.messagesRepo.create(content);
   }
 }
